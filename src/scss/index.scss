@@ -3,8 +3,7 @@ body {
     background-size: 100vw 100vh;
 }
 
-body:before {
-    content: '';
+.landingPage {
     position: absolute;
     left: 30px;
     top: 30px;
