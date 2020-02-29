@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import HomePage from './components/home'
+import {Header} from './components/header'
 
 function Main() {
     return (
-        <HomePage />
+        <Header />
     )
 }
 

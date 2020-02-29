@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function home() {
+export function Header() {
     return (
         <div>
-            <h1>home page</h1>
         </div>
     )
 }
