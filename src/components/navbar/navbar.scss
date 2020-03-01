@@ -1,9 +1,34 @@
-.navBody{
+.navBody {
+    margin: 10px;
     font-size: 40px;
     padding: 20px;
+    width: 200px;
+    background-image: url('./assets/cloth.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 
-.navContent{
+.navBody:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #eee;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-radius: 10px;
+}
+
+.navShow {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.navHide {
+    display: none;
 }
