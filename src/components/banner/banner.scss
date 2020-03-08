@@ -1,16 +1,15 @@
 .banner {
-    background-image: url('./cloth.png');
+    background-image: url('./assets/cloth.png');
     border-radius: 20px;
     background-size: 100% 100%;
     width: 200px;
     height: 500px;
     filter: drop-shadow(5px 5px 2px black);
+    margin: 10px;
 }
 
 .border {
     border-radius: 20px 20px 50px 50px;
-    border-left: solid 20px rgba(255, 0, 0, 0.5);
-    border-right: solid 20px rgba(255, 0, 0, 0.5);
     height: 472px;
 }
 
