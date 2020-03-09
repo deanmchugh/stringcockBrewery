@@ -1,16 +1,14 @@
 .banner {
     background-image: url('./assets/cloth.png');
-    border-radius: 20px;
     background-size: 100% 100%;
     width: 200px;
     height: 500px;
-    filter: drop-shadow(5px 5px 2px black);
+    filter: drop-shadow(2px 2px 0 red)
+        drop-shadow(-2px 2px 0 red)
+        drop-shadow(2px -2px 0 red)
+        drop-shadow(-2px -2px 0 red)
+        drop-shadow(5px 5px 3px black);
     margin: 10px;
-}
-
-.border {
-    border-radius: 20px 20px 50px 50px;
-    height: 472px;
 }
 
 .image {
@@ -19,4 +17,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
+    filter: opacity(30%);
 }
