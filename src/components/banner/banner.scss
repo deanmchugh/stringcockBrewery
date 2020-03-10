@@ -3,19 +3,23 @@
     background-size: 100% 100%;
     width: 200px;
     height: 500px;
-    filter: drop-shadow(2px 2px 0 red)
-        drop-shadow(-2px 2px 0 red)
-        drop-shadow(2px -2px 0 red)
-        drop-shadow(-2px -2px 0 red)
-        drop-shadow(5px 5px 3px black);
-    margin: 10px;
+    margin: 15px;
+    text-align: center;
 }
 
 .image {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 38%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    height: 30%;
     filter: opacity(30%);
+}
+
+.name {
+    padding-top: 25px;
+}
+
+.desc {
+    padding-top: 100px;
 }

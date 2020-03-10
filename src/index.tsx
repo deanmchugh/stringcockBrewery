@@ -13,9 +13,9 @@ import potion from '../src/components/banner/assets/potion.png'
 function Main() {
     return (
         <div className='landingPage'>
-            <Banner image={magic} colour={'255, 0, 255, 0.5'}/>
-            <Banner image={sword} colour={'255, 0, 0, 0.5'}/>
-            <Banner image={potion} colour={'0, 0, 255, 0.5'}/>
+            <Banner img={magic} clr={'blue'} name={'THE WIZARD'} desc={'A Radler with fruity finish'}/>
+            <Banner img={sword} clr={'red'} name={'THE WARRIOR'} desc={'A India Pale Larger with a bold flavour'}/>
+            <Banner img={potion} clr={'green'} name={'THE HEALER'} desc={'A refreshing IPA'}/>
         </div>
     )
 }
