@@ -1,18 +1,17 @@
 .navBody {
-    margin: 10px;
     font-size: 40px;
-    padding: 20px;
-    width: 200px;
-    position: relative;
-    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .navShow {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .navHide {
     display: none;
+}
+
+.logo {
+    width: 200px;
 }
