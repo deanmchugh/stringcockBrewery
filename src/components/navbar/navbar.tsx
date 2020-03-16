@@ -15,11 +15,16 @@ export const NavBar = () => {
     return (
         <div className='navBody'>
             <div className={styling}>
-                <p>History</p>
-                <p>Products</p>
+                <div className='menu'>
+                    <p>History</p>
+                    <p>Products</p> 
+                </div>
                 <img className='logo' src={logo} alt='logo' />
-                <p>Merchandise</p>
-                <p>Contact</p>
+                <div className='menu'>
+                    <p>Merchandise</p>
+                    <p>Contact</p> 
+                </div>
+                
             </div>
         </div>
     )
