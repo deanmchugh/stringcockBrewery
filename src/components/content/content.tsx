@@ -1,5 +1,9 @@
 import React from 'react'
 
-export const Content = () => {
+type Props = {
+    content: string
+}
+
+export const Content = ({content}: Props) => {
     
 }

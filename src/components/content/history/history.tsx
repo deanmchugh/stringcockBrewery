@@ -1,5 +1,5 @@
 import React from 'react'
-import './bio.scss'
+import './history.scss'
 
 export const Bio = () => {
     return (

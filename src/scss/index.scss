@@ -1,17 +1,18 @@
 * {
     padding: 0;
     border: 0;
+    font-family: 'Cormorant Infant', serif;
 }
 
 button {
     border: none;
     background: none;
+    color: black;
 }
 
 body {
     background-image: url('./paper.jpg');
     background-size: 100vw 100vh;
-    font-family: 'Cormorant Infant', serif;
 }
 
 .waxStamp {
