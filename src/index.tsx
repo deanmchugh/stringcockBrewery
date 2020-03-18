@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
 import './scss/index.scss'
 import waxStamp from './assets/waxStamp.png'
-
 import {NavBar} from './components/navbar/navbar'
 
 function Main() {

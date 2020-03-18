@@ -1,7 +1,7 @@
 import React from 'react'
 import './history.scss'
 
-export const Bio = () => {
+export const History = () => {
     return (
         <div className='bio'>
             <p className='firstPara'>
