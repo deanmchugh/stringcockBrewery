@@ -18,7 +18,7 @@ export const NavBar = () => {
             <div className={styling}>     
                 <div className='menu'>
                     <button onClick={() => setContent('history')}>History</button>
-                    <button onClick={() => setContent('products')}>Products</button> 
+                    <button onClick={() => setContent('product')}>Products</button> 
                 </div>
                 <img className='logo' src={logo} alt='logo' /> 
                 <div className='menu'>

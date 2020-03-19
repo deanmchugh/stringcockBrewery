@@ -7,6 +7,9 @@
 
 .firstPara::first-letter {
     font-family: 'Rye', cursive;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 400;
+    float: left;
+    line-height: 60px;
+    padding: 4px 8px 0 3px;
 }
