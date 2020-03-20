@@ -1,3 +1,8 @@
 .products {
     display: flex;
+    justify-content: center;
+}
+
+.products * {
+    margin: 15px;
 }

@@ -6,7 +6,7 @@ import logo from './assets/logo.png'
 
 export const NavBar = () => {
     const [styling, setStyling] = useState('navShow')
-    const [content, setContent] = useState('history')
+    const [content, setContent] = useState('product')
 
     function toggleMenu() {
         const state = styling === 'navShow' ? 'navHide' : 'navShow'

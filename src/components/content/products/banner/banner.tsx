@@ -20,8 +20,8 @@ export const Banner = ({img, clr, name, desc}: Props) => {
     
     return (
         <div className='banner' style={borderStyle}>
-            <h2 className='name'>{name}</h2>
             <img className='image' src={img} />
+            <h2 className='name'>{name}</h2>
             <h4 className='desc'>{desc}</h4>
         </div>
     )

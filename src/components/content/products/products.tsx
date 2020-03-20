@@ -1,9 +1,9 @@
 import React from 'react'
 import {Banner} from './banner/banner'
 import './products.scss'
-import sword from './banner/assets/sword.png'
-import potion from './banner/assets/potion.png'
-import magic from './banner/assets/magic.png'
+import sword from './banner/assets/warrior.png'
+import potion from './banner/assets/healer.png'
+import magic from './banner/assets/wizard.png'
 
 export const Products = () => {
     return (
