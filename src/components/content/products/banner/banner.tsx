@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './banner.scss' 
+import close from './assets/close.png'
 
 type Props = {
     img: string;
@@ -20,17 +21,17 @@ export const Banner = ({img, clr, name, desc}: Props) => {
     }
 
     const displayInfo = () => {
-        display === 'compact' ? setDisplay('banner') : setDisplay('compact')
+        display === 'compact' ? setDisplay('expand') : setDisplay('compact')
     }
     
     return (
-        <div className={display} 
-             style={borderStyle}
-             onClick={() => displayInfo()}
-        >
-            <img className='image' src={img} />
-            <h2 className='name'>{name}</h2>
-            <h4 className='desc'>{desc}</h4>
-        </div>
+        <div className={display} onClick={() => displayInfo()}>
+            <div className='banner' style={borderStyle}>
+                <img className='image' src={img} />
+                <h2 className='name'>{name}</h2>
+                <h4 className='desc'>{desc}</h4>
+            </div>
+            <img className='closeIcon' src={close} onClick={() => displayInfo()}/>
+        </div> 
     )
 }

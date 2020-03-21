@@ -1,4 +1,4 @@
-.compact {
+.banner {
     background-image: url('./assets/cloth.png');
     background-size: 100% 100%;
     width: 200px;
@@ -6,25 +6,44 @@
     text-align: center;
 }
 
-.compact:hover {
+.banner:hover {
     width: 220px;
     height: 520px;
-}
-
-.banner {
-    z-index: 1;
-    background-image: url('./assets/cloth.png');
-    background-size: 100% 100%;
-    background-color: white;
-    width: 200px;
-    height: 500px;
-    text-align: center;
-    box-shadow: 20px 20px 10px black;
 }
 
 .image {
     height: 39%;
     padding-top: 60px;
+}
+
+.closeIcon {
+    visibility: hidden;
+}
+
+.compact {
+    width: 220px;
+    padding-top: 20px;
+}
+
+.expand {
+    position: absolute;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: white;
+    width: 700px;
+    height: 530px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 1000px black;
+    .closeIcon {
+        visibility: visible;
+        height: 5%;
+    }
+    .banner:hover {
+        width: 200px;
+        height: 500px;
+    }
 }
 
 
