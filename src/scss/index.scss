@@ -4,10 +4,19 @@
     font-family: 'Cormorant Infant', serif;
 }
 
+h1 {
+    margin: 0;
+}
+
 button {
     border: none;
     background: none;
     color: black;
+    font-size: 30px;
+}
+
+button:hover {
+    font-weight: 700;
 }
 
 body {

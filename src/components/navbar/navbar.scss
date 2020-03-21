@@ -1,10 +1,10 @@
-.navBody {
-    width: 99vw;
-}
-
 .navShow {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.navShow * {
+    width: 153px;
 }
 
 .navHide {
@@ -13,17 +13,6 @@
 
 .logo {
     width: 150px;
-    padding: 10px 0 0 10px;
 }
 
-.menu * {
-    padding: 0 1vw 0 1vw;
-    font-size: 40px;
-    font-weight: 550;
-}
 
-.menu {
-    display: flex;
-    margin: 0 auto;
-    height: 80px;
-}

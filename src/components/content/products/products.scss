@@ -1,8 +1,19 @@
 .products {
-    display: flex;
-    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
 }
 
-.products * {
+.beers {
+    border-top: 5px solid black;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.beers * {
     margin: 15px;
+}
+
+.adventure {
+    border-top: 5px solid black;
 }

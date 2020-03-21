@@ -16,15 +16,11 @@ export const NavBar = () => {
     return (
         <div className='navBody'>
             <div className={styling}>     
-                <div className='menu'>
-                    <button onClick={() => setContent('history')}>History</button>
-                    <button onClick={() => setContent('product')}>Products</button> 
-                </div>
+                <button onClick={() => setContent('history')}>History</button>
+                <button onClick={() => setContent('product')}>Products</button> 
                 <img className='logo' src={logo} alt='logo' /> 
-                <div className='menu'>
-                    <button onClick={() => setContent('merch')}>Merchandise</button>
-                    <button onClick={() => setContent('contact')}>Contact</button> 
-                </div>
+                <button onClick={() => setContent('merch')}>Merchandise</button>
+                <button onClick={() => setContent('contact')}>Inquire</button> 
             </div>
             <Content content={content}/>
         </div>
