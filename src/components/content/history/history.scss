@@ -1,6 +1,6 @@
 .bio {
-    font-size: calc(13px + 1vw);
-    font-weight: 550;
+    font-size: calc(12px + 1vw);
+    font-weight: 600;
     width: 80vw;
     max-width: 1000px;
     margin: 0 auto;
@@ -8,9 +8,13 @@
 
 .firstPara::first-letter {
     font-family: 'Rye', cursive;
-    font-size: 80px;
-    font-weight: 400;
+    color: red;
+    font-weight: 300;
+    font-size: calc(450% - 25px);
     float: left;
-    line-height: 60px;
-    padding: 4px 8px 0 3px;
+    padding: 6px 3px 6px 3px;
+    margin-right: 5px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: seashell;
 }

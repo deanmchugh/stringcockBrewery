@@ -18,8 +18,11 @@ export const History = () => {
             <p>
                 The malt was given as a prize by Demeter for a race against the rising 
                 sun across her eternal field of grains. Dried with the fires of an 
-                elder red dragon. A single flower painstakingly picked from the hop 
-                vine in her personal garden each full moon and accumulated over a 
+                elder red dragon. 
+            </p>
+            <p>
+                A single flower painstakingly picked from the hop 
+                vine in Demeter personal garden each full moon and accumulated over a 
                 lifetime.
             </p>
             <p>

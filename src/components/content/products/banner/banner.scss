@@ -20,6 +20,10 @@
     visibility: hidden;
 }
 
+.label {
+    visibility: hidden;
+}
+
 .compact {
     width: 220px;
     padding-top: 20px;
@@ -40,11 +44,15 @@
         visibility: visible;
         height: 5%;
     }
+    .label {
+        visibility: visible;
+    }
     .banner:hover {
         width: 200px;
         height: 500px;
     }
 }
+
 
 
 

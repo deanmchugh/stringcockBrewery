@@ -31,6 +31,7 @@ export const Banner = ({img, clr, name, desc}: Props) => {
                 <h2 className='name'>{name}</h2>
                 <h4 className='desc'>{desc}</h4>
             </div>
+            <h2 className='label'>BEER LABEL</h2>
             <img className='closeIcon' src={close} onClick={() => displayInfo()}/>
         </div> 
     )
