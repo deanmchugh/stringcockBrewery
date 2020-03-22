@@ -13,14 +13,18 @@ export const NavBar = () => {
         setStyling(state)
     }
 
+    const highlight = {
+        borderBottom: content === HTMLElement.name ? '3px solid red' : '0 solid red'
+    }
+
     return (
         <div className='navBody'>
             <div className={styling}>     
-                <button onClick={() => setContent('history')}>History</button>
-                <button onClick={() => setContent('product')}>Products</button> 
+                <button name='history' style={highlight} onClick={() => setContent('history')}>History</button>
+                <button name='product' style={highlight} onClick={() => setContent('product')}>Products</button> 
                 <img className='logo' src={logo} alt='logo' /> 
-                <button onClick={() => setContent('merch')}>Merchandise</button>
-                <button onClick={() => setContent('contact')}>Inquire</button> 
+                <button name='merch' style={highlight} onClick={() => setContent('merch')}>Merchandise</button>
+                <button name='inquire' style={highlight} onClick={() => setContent('contact')}>Inquire</button> 
             </div>
             <Content content={content}/>
         </div>

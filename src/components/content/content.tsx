@@ -2,7 +2,11 @@ import React from 'react'
 import {History} from './history/history'
 import {Products} from './products/products'
 
-export const Content = (props: {content: string}) => {
-    if (props.content === 'history') return <History />
-    if (props.content === 'product') return <Products />
+type Props = {
+    content: string
+}
+
+export const Content = ({content}: Props) => {
+    if (content === 'history') return <History />
+    if (content === 'product') return <Products />
 }
