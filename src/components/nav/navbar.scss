@@ -1,32 +1,38 @@
 nav {
-    display: none;
+    text-align: center;
+    padding: 10px;
 }
 
-ul {
+button {
+    border: none;
+    background: none;
+    color: black;
+    font-size: 30px;
+}
+
+button:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+li {
     list-style-type: none;
 }
 
-.navShow {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 900px;
-    margin: 75px auto 75px auto;
-    height: 40px;
-}
-
-.navShow * {
-    width: 153px;
-}
-
-.navHide {
-    display: none;
-}
-
 .logo {
-    position: relative;
-    top: -70px;
-    width: 150px;
-    height: 175px;
+    margin-top: 5px;
+    width: 125px;
+}
+
+.menuIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0px 0px 20px;
+}
+
+.menuHide {
+    display: none;
 }
 
 

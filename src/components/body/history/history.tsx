@@ -3,7 +3,8 @@ import './history.scss'
 
 export const History = () => {
     return (
-        <div className='bio'>
+        <article className='bio'>
+            <h1>HISTORY</h1>
             <p className='firstPara'>
                 Strongcock Brewery is the foundry of M. Strong a Master Alchemist with 
                 an eternal quest to create the ultimate beer, liquid gold. The 
@@ -31,6 +32,6 @@ export const History = () => {
                 brewing. Convinced only to share these secrets through a drinking 
                 competition completed over the period of a solar year.
             </p>
-        </div>
+        </article>
     )
 }

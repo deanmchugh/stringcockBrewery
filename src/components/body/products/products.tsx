@@ -7,7 +7,7 @@ import magic from './banner/assets/wizard.png'
 
 export const Products = () => {
     return (
-        <div className='products'>
+        <article className='products'>
             <h1>BEER</h1>
             <div className='beers'>
                 <Banner img={sword} clr='red' name='WARRIOR' desc='strong beer' />
@@ -18,6 +18,6 @@ export const Products = () => {
             <div className='adventure'>
                 
             </div>
-        </div>
+        </article>
     )
 }
