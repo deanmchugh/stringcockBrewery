@@ -6,6 +6,11 @@
     margin: 0 auto;
 }
 
+.history {
+    border-top: 3px solid black;
+    padding-top: 10px;
+}
+
 .firstPara::first-letter {
     font-family: 'Rye', cursive;
     color: red;

@@ -2,14 +2,14 @@ import React, {useState} from 'react'
 import './banner.scss' 
 import close from './assets/close.png'
 
-type Props = {
+interface Props {
     img: string;
     clr: string;
     name: string;
     desc: string
 }
 
-export const Banner = ({img, clr, name, desc}: Props) => {
+export const Banner: React.FC<Props> = ({img, clr, name, desc}) => {
     const [display, setDisplay] = useState('compact')
 
     const borderStyle = {
@@ -29,7 +29,7 @@ export const Banner = ({img, clr, name, desc}: Props) => {
             <div className='banner' style={borderStyle}>
                 <img className='image' src={img} />
                 <h2 className='name'>{name}</h2>
-                <h4 className='desc'>{desc}</h4>
+                <p className='desc'>{desc}</p>
             </div>
             <h2 className='label'>BEER LABEL</h2>
             <img className='closeIcon' src={close} onClick={() => displayInfo()}/>

@@ -1,11 +1,13 @@
 .products {
-    width: 700px;
+    width: 80vw;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .beers {
     border-top: 5px solid black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     height: 550px;
 }
@@ -15,5 +17,5 @@
 }
 
 .adventure {
-    border-top: 5px solid black;
+    border-top: 3px solid black;
 }

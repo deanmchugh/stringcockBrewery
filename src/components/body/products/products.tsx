@@ -1,18 +1,28 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Banner} from './banner/banner'
 import './products.scss'
-import sword from './banner/assets/warrior.png'
-import potion from './banner/assets/healer.png'
-import magic from './banner/assets/wizard.png'
+import {beers} from './data'
 
 export const Products = () => {
+    const [banners, setBanners] = useState([])
+
+    useEffect(() => {
+        const banners: Array<React.FC> = []
+
+        beers.forEach(beer => {
+            banners.push(<Banner img={beer.image} clr={beer.colour} name={beer.name} desc={beer.decription} />)
+        })
+
+        return () => {
+            setBanners(banners)
+        }
+    }, [])
+
     return (
         <article className='products'>
             <h1>BEER</h1>
             <div className='beers'>
-                <Banner img={sword} clr='red' name='WARRIOR' desc='strong beer' />
-                <Banner img={potion} clr='green' name='HEALER' desc='light beer' />
-                <Banner img={magic} clr='blue' name='WIZARD' desc='fruit beer' />
+                {banners}
             </div>
             <h1>ADVENTURE PACK</h1>
             <div className='adventure'>
