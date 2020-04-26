@@ -4,13 +4,16 @@
     font-family: 'Cormorant Infant', serif;
 }
 
+html {
+    background-image: url('./assets/paper.jpg');
+    background-size: 100% 100%;
+}
+
 html, body {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: .12rem;
     word-spacing: .16rem;
-    background-image: url('../assets/paper.jpg');
-    background-size: 100% 100%;
 }
 
 p + p {

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ReactDOM from 'react-dom'
-import './scss/index.scss'
+import './index.scss'
 import {NavBar} from './components/nav/navbar'
 import {Content} from './components/body/content'
 import {Footer} from './components/footer/footer'
