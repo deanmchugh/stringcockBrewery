@@ -11,7 +11,7 @@ function Main() {
     return (
         <>
             <header>
-                <NavBar setContent={setBodyContent}/>
+                <NavBar setContent={setBodyContent} />
             </header>
             <main>
                 <Content content={bodyContent} />
