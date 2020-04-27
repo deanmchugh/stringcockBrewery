@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, MouseEvent, FC } from 'react'
 import './navbar.scss'
 import logo from '../../assets/logo.png'
 import menu from '../../assets/menuIcon.png'
@@ -7,7 +7,7 @@ interface PropsFunction {
     setContent: (content: string) => void
 }
 
-export const NavBar: React.FC<PropsFunction> = ({ setContent }) => {
+export const NavBar: FC<PropsFunction> = ({ setContent }) => {
     const [showMenu, setShowMenu] = useState('menuHide')
 
     function toggleMenu() {
@@ -15,8 +15,8 @@ export const NavBar: React.FC<PropsFunction> = ({ setContent }) => {
         setShowMenu(state)
     }
 
-    function setBodyContent(e: any) {
-        setContent(e.target.name)
+    function setBodyContent(e: MouseEvent<HTMLButtonElement>) {
+        setContent(e.currentTarget.name)
         toggleMenu()
     }
 
