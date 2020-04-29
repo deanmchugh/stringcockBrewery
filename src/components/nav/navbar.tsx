@@ -30,7 +30,7 @@ export const NavBar: FC<PropsFunction> = ({ setContent }) => {
                 <li><button name='history' onClick={setBodyContent}>History</button></li>
                 <li><button name='product' onClick={setBodyContent}>Products</button></li>
                 <li><button name='merch' onClick={setBodyContent}>Merchandise</button></li>
-                <li><button name='inquire' onClick={setBodyContent}>Inquire</button></li>
+                <li><button name='contact' onClick={setBodyContent}>Inquire</button></li>
             </ul>
         </nav>
     )
