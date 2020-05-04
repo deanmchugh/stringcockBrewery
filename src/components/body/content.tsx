@@ -10,17 +10,13 @@ export const Content: FC<{ content: string }> = ({ content }) => {
     useEffect(() => {
         let body: any
         switch (content) {
-            case 'product' : 
-                setArticel(<Products />)
+            case 'product' : setArticel(<Products />)
                 break
-            case 'history' : 
-                setArticel(<History />)
+            case 'history' : setArticel(<History />)
                 break
-            case 'contact' : 
-                setArticel(<Contacts />)
+            case 'contact' : setArticel(<Contacts />)
                 break
-            case 'merch' : 
-                setArticel(<Merchandise />)
+            case 'merch' : setArticel(<Merchandise />)
                 break  
         } 
     }, [content])
