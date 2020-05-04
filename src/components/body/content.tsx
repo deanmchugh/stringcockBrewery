@@ -11,16 +11,16 @@ export const Content: FC<{ content: string }> = ({ content }) => {
         let body: any
         switch (content) {
             case 'product' : 
-                body = <Products />
+                setArticel(<Products />)
                 break
             case 'history' : 
-                body = <History />
+                setArticel(<History />)
                 break
             case 'contact' : 
-                body = <Contacts />
+                setArticel(<Contacts />)
                 break
             case 'merch' : 
-                body = <Merchandise />
+                setArticel(<Merchandise />)
                 break  
         } 
     }, [content])
