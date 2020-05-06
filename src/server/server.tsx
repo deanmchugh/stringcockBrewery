@@ -1,8 +1,12 @@
+require('dotenv').config()
 import mongoose from 'mongoose'
+import express from 'express'
 
-var mongoDB = 'mongodb://127.0.0.1/my_database'
+const app = express()
+
+const mongoDB = `mongodb+srv://dmchugh:${process.env.DB_PASS}@mchughcluster-94rst.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 mongoose.connect(mongoDB, { useNewUrlParser: true })
 
-var db = mongoose.connection
+const db = mongoose.connection
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
