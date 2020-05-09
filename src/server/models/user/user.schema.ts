@@ -1,6 +1,8 @@
-import {model, Schema, Document} from 'mongoose'
+import {Schema} from 'mongoose'
+import {findOrCreate} from './user.statics'
+import {setPassword} from './user.methods'
 
-const UserSchema: Schema = new Schema({
+const UserSchema = new Schema({
     firstName: {
         type: String, 
         required: [true, 'First name is required'],
@@ -28,18 +30,17 @@ const UserSchema: Schema = new Schema({
         min: [6, 'Password must be 6 charcters or more'],
         max: [20, 'Password can not exceed 20 characters']
     },
-    updated: { 
+    created: {
+        type: Date,
+        default: Date.now()
+    },
+    lastUpdated: { 
         type: Date, 
         default: Date.now() 
     }
 })
 
-export interface IUser extends Document {
-    firstName: String
-    lastName: String
-    email: String
-    password: String
-    updated: Date
-}
+UserSchema.statics.findOrCreate = findOrCreate
+UserSchema.methods.setPassword = setPassword
 
-export default model<IUser>('User', UserSchema)
+export default UserSchema
