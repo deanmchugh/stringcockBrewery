@@ -1,11 +1,11 @@
 import Mongoose from 'mongoose'
 import {UserModel} from '../models/user/user.model'
-import env from '../../../env.config'
+import env from '../../env.config'
 
 let database: Mongoose.Connection
 
 export const connect = () => {
-    const mongoDB = `mongodb+srv://dmchugh:${env.DB_PASS}@mchughcluster-94rst.mongodb.net/${env.DB_NAME}?retryWrites=true&w=majority`
+    const mongoDB = `mongodb+srv://${env.DB_HOST}:${env.DB_PASS}@mchughcluster-94rst.mongodb.net/${env.DB_NAME}?retryWrites=true&w=majority`
 
     if (database) {
         return
