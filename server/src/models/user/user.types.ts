@@ -1,10 +1,10 @@
 import {Document, Model} from 'mongoose'
 
 export interface IUser {
-    firstName: String
-    lastName: String
-    email: String
-    password: String
+    firstName: string
+    lastName: string
+    email: string
+    password: string
     created?: Date
     lastUpdated?: Date
 }

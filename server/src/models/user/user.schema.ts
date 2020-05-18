@@ -1,6 +1,8 @@
 import {Schema} from 'mongoose'
 import {findOrCreate} from './user.statics'
-import {setPassword} from './user.methods'
+import {setPassword, comparePassword} from './user.methods'
+import {IUserDocument} from './user.types'
+import {hashSync} from 'bcryptjs'
 
 const UserSchema = new Schema({
     firstName: {
@@ -40,7 +42,16 @@ const UserSchema = new Schema({
     }
 })
 
+UserSchema.pre<IUserDocument>('save', function(next) {
+    if (!this.isModified('password')) {
+        return next()
+    }
+    this.password = hashSync(this.password, 10)
+    next()
+})
+
 UserSchema.statics.findOrCreate = findOrCreate
 UserSchema.methods.setPassword = setPassword
+UserSchema.methods.comparePassword = comparePassword
 
 export default UserSchema
