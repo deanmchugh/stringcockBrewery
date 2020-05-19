@@ -5,9 +5,7 @@ import {connect, disconnect} from '../database/database'
     connect()
 
     const users = [
-        {firstName: 'John', lastName: 'Smith04', email: 'mail04@mail.com', password: '123456'},
-        {firstName: 'John', lastName: 'Smith05', email: 'mail05@mail.com', password: '123456'},
-        {firstName: 'John', lastName: 'Smith06', email: 'mail06@mail.com', password: '123456'},
+        {firstName: 'John', lastName: 'Smith07', email: 'mail07@mail.com', password: '1234567'}
     ]
 
     try {
