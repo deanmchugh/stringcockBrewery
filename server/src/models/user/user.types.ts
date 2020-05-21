@@ -1,8 +1,6 @@
 import {Document, Model} from 'mongoose'
 
 export interface IUser {
-    firstName: string
-    lastName: string
     email: string
     password: string
     created?: Date
@@ -14,15 +12,11 @@ export interface IUserDocument extends IUser, Document {
 }
 
 export interface IUserModel extends Model<IUserDocument> {
-    findOrCreate: (
+    findOneOrCreate: (
         this: IUserModel, {
-            firstName,
-            lastName,
             email,
             password
         }: {
-            firstName: string
-            lastName: string
             email: string
             password: string
         }

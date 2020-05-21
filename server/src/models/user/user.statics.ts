@@ -1,6 +1,6 @@
 import {IUserDocument, IUserModel} from './user.types'
 
-export async function findOrCreate(
+export async function findOneOrCreate(
     this: IUserModel,
     userId: string
 ): Promise<IUserDocument> {

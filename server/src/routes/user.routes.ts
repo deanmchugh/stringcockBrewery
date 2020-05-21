@@ -18,20 +18,14 @@ module.exports = function(app: any) {
                 email: req.body.email
             }).exec()
             if (!user) {
-                return res.status(400).send({
-                    message: 'No user exists'
-                })
+                return res.status(400).send({message: 'No user exists'})
             }
             user.comparePassword(req.body.password, (error, match) => {
                 if (!match) {
-                    return res.status(400).send({
-                        message: 'Password is invalid'
-                    })
+                    return res.status(400).send({message: 'Password is invalid'})
                 }
             })
-            res.send({
-                message: 'user and password is correct'
-            })
+            res.send({message: 'user and password is correct'})
         } catch (error) {
             res.status(500).send(error)
         }

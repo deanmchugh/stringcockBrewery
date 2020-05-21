@@ -1,22 +1,10 @@
 import {Schema} from 'mongoose'
-import {findOrCreate} from './user.statics'
+import {findOneOrCreate} from './user.statics'
 import {setPassword, comparePassword} from './user.methods'
 import {IUserDocument} from './user.types'
 import {hashSync} from 'bcryptjs'
 
 const UserSchema = new Schema({
-    firstName: {
-        type: String, 
-        required: [true, 'First name is required'],
-        min: [1, 'First name is required'],
-        max: [20, 'First name needs to be 20 characters or less']
-    },
-    lastName: {
-        type: String, 
-        required: [true, 'Last name is required'],
-        min: [1, 'Last name is required'],
-        max: [20, 'Last name needs to be 20 characters or less']
-    },
     email: {
         type: String, 
         required: [true, 'Email is required'],
@@ -50,7 +38,7 @@ UserSchema.pre<IUserDocument>('save', function(next) {
     next()
 })
 
-UserSchema.statics.findOrCreate = findOrCreate
+UserSchema.statics.findOneOrCreate = findOneOrCreate
 UserSchema.methods.setPassword = setPassword
 UserSchema.methods.comparePassword = comparePassword
 
